@@ -1,0 +1,93 @@
+body {
+	font-family:'verdana';
+	width: 600px;
+	margin-left: auto;
+  	margin-right: auto;
+	text-align: center;
+	background-color: #fff
+}
+
+h1 {
+	font-size:32px;
+	text-align: center;
+	color:#333;
+	display: inline;
+}
+
+#media-player {
+	position: absolute;
+	padding:1em 1em .5em;
+	width: 600px;
+	margin-left: auto;
+	margin-right: auto;
+	/*top: 50%;*/
+	/*left: 50%;*/
+	/*transform: translateX(-50%) translateY(-50%);*/
+}
+
+#media-video {
+	display: block !important;
+	border:1px solid #2e52a4;
+	width: 100%;
+	height: auto;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	max-height:100%;
+	overflow:auto;
+	background:#000;
+}
+.row {
+	margin-left: auto;
+	margin-right: auto;
+}
+#word0 {
+	top: 20%;
+}
+#word1 {
+	top: 30%;
+}
+#word2 {
+	top: 40%;
+}
+#word3 {
+	top: 50%;
+}
+#word4 {
+	top: 60%;
+}
+.text-draggable {
+	position: absolute !important;
+	font-size:24px;
+	font-weight: bold;
+	color: red;
+  	display: inline;
+	text-shadow:none;
+	margin: 0 1em 1em 0;
+  	z-index: 100;
+}
+.text-draggable:hover, .text-draggable:focus .dropdown-menu{
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.toggleVal {
+	font-size:12px;
+	background-color:#4CAF50;
+	width:100px;
+	height:50px;
+	cursor: pointer;
+	margin : 5px 5px 0 5px;
+}
+
+.active .toggleVal:hover, .toggleVal:focus {
+  background-color: #3e8e41;
+}
+.showState {
+  	display: none;
+  	background-color: #f9f9f9;
+	overflow: hidden;
+}
+.dropdownContentWord {
+	display: none;
+	overflow: hidden;
+}

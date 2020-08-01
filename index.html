@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='utf-8' />
+    <title>Text rendering on Video</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <link href='style.css' rel='stylesheet' />
+    <script src='script.js'></script>
+</head>
+<body>
+	<h1>Rendering Text on Video</h1>
+	<div id='media-player' class="container">
+        <div class = container>
+            <div class="btn-group">
+                <div id='word0' style="color:red;"  class='text-draggable'>Word1
+                    <div id="word0Dropdown" class="dropdownContentWord dropdown-menu p-4 text-muted"></div>
+                </div>
+            </div>
+            <div id='word1' style="color:red;"  class='text-draggable'>Word2
+                <div id="word1Dropdown" class="dropdownContentWord"></div>
+            </div>
+            <div id='word2' style="color:red;"  class='text-draggable'>Word3
+                <div id="word2Dropdown" class="dropdownContentWord"></div>
+            </div>
+            <div id='word3' style="color:red;"  class='text-draggable'>Word4
+                <div id="word3Dropdown" class="dropdownContentWord"></div>
+            </div>
+            <div id='word4' style="color:red;"  class='text-draggable'>Word5
+                <div id="word4Dropdown" class="dropdownContentWord"></div>
+            </div>
+            <video id='media-video' controls>
+                <source src='https://frontend-coding-challenge.s3.amazonaws.com/moonwalker.mp4' type='video/mp4'>
+            </video>
+            <div class="row">
+                <button type="button" id="word0btn" class="btn dropdown-toggle toggleVal col-2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Word1</button>
+                <div id="word0btnDropdown" class="dropdown-menu p-4 text-muted showState" >"X:  Y:  colour: "</div>
+                <button type="button" id="word1btn" class="btn dropdown-toggle toggleVal col-2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Word2</button>
+                <div id="word1btnDropdown" class="dropdown-menu p-4 text-muted showState">"X:  Y:  colour: "</div>
+                <button type="button" id="word2btn" class="btn dropdown-toggle toggleVal col-2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Word3</button>
+                <div id="word2btnDropdown" class="dropdown-menu p-4 text-muted showState">"X:  Y:  colour: "</div>
+                <button type="button" id="word3btn" class="btn dropdown-toggle toggleVal col-2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Word4</button>
+                <div id="word3btnDropdown" class="dropdown-menu p-4 text-muted showState">"X:  Y:  colour: "</div>
+                <button type="button" id="word4btn" class="btn dropdown-toggle toggleVal col-2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Word5</button>
+                <div id="word4btnDropdown" class="dropdown-menu p-4 text-muted showState">"X:  Y:  colour: "</div>
+
+            </div>
+        </div>
+	</div>
+</body>
+</html>
