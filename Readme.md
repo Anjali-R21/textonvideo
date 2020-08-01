@@ -1,6 +1,6 @@
-##Text rendering on Video
+## Text rendering on Video
 
-#####Get Started: 
+##### Get Started: 
 
 1) Start a local server using
 ```$ node server.js```
